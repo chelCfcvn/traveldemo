@@ -8,6 +8,12 @@ html {
     font-family: poppins;
 }
 
+#header {
+    width: 100%;
+    background: linear-gradient(rgb(96, 90, 107, 0.5), rgb(169, 153, 163, 0.5)), url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-2.jpg) no-repeat bottom center;
+    background-size: cover;
+}
+
 .header-logo {
     width: 197px;
     margin: 0 15px;
@@ -163,8 +169,8 @@ html {
     filter: brightness(65%);
 }
 
-.header-content-section {
-    padding-top: 160px;
+.header-content {
+    padding: 160px 0 85px;
 }
 
 .header-content-title {
@@ -258,3 +264,348 @@ html {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
+#content-list {
+    padding: 55px 0 45px;
+    margin: 0 74.5px;
+}
+
+.content-title {
+    text-align: center;
+}
+
+.decs {
+    font-size: 14px;
+    color: #9a9a9a;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    line-height: 14px;
+}
+
+.title {
+    font-size: 36px;
+    color: #555555;
+    margin-bottom: 50px;
+    line-height: 36px;
+}
+
+.our-proposals {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.our-proposals-item {
+    /* width: calc(100%/3); */
+    list-style: none;
+    flex: 0 0 calc(100%/3);
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.our-proposals-item-content {
+    height: 380px;
+    width: 100%;
+    position: relative;
+}
+
+.proposals-icon img {
+    width: 35px;
+    float: left;
+    position: absolute;
+}
+
+.proposals-icon {
+    top: 30px;
+    left: 30px;
+    position: absolute;
+}
+
+.proposals-info {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+    text-align: left;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.proposals-info h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.proposals-info p {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.proposals-content-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: white;
+    background-color: #14b9d5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    animation: FadeIn ease-in-out 0.5s;
+    /* transition-delay: 0.5s; */
+}
+
+.proposals-add {
+    list-style: none;
+    font-size: 14px;
+}
+
+.proposals-content-list .proposals-add {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 15px 0;
+}
+
+.proposals-content-list .proposals-botton {
+    background-color: white;
+    width: 180px;
+    line-height: 30px;
+    border-radius: 20px;
+}
+
+.proposals-content-list a {
+    font-size: 15px;
+    color: #14b9d5;
+    text-decoration: none;
+}
+
+.our-proposals-item:hover .proposals-content-list {
+    display: flex;
+}
+
+.banner-search {
+    position: relative;
+}
+
+.banner-search img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.banner-search-img {}
+
+.banner-search-content {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-search-content-box {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 400px;
+    color: white;
+    line-height: 50px;
+}
+
+.banner-search-btn {
+    display: inline-block;
+    padding: 0 85px;
+}
+
+.banner-search-btn a {
+    background-color: white;
+    border-radius: 25px;
+    font-size: 14px;
+    color: #f76570;
+    text-decoration: none;
+    padding: 10px 35px;
+    line-height: 43px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.travel-info {
+    width: 100%;
+    display: flex;
+    padding: 100px 0 100px;
+}
+
+.travel-info-box {
+    padding: 0 15px;
+}
+
+.travel-location {}
+
+.travel-location p {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #9a9a9a;
+    padding: 0 0 15px;
+}
+
+.travel-location h1 {
+    font-size: 36px;
+    color: #555555;
+    line-height: 36px;
+    padding: 0 0 25px;
+}
+
+.travel-info-description {
+    font-size: 14px;
+}
+
+.travel-info-description p {
+    padding: 0 0 30px;
+    color: #9a9a9a;
+    letter-spacing: 1px;
+}
+
+.travel-price {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.travel-price-old {
+    font-size: 30px;
+    color: #dadada;
+    font-weight: 2px;
+    text-decoration: line-through;
+}
+
+.travel-price-new {
+    font-size: 30px;
+    font-weight: 2px;
+    color: #555555;
+}
+
+.travel-price-person {
+    font-size: 14px;
+    padding-top: 10px;
+    color: #555555;
+}
+
+.travel-info-btn a {
+    font-size: 14px;
+    background-color: #1bbc9b;
+    color: white;
+    text-decoration: none;
+    padding: 10px 35px;
+    border-radius: 34px;
+    letter-spacing: 2px;
+}
+
+.travel-info-time {
+    position: relative;
+}
+
+.travel-info-img {
+    width: 800px;
+    object-fit: cover;
+    height: 410px;
+    padding: 0 15px;
+}
+
+.travel-time-list {
+    position: absolute;
+    background-color: #14b9d5;
+    width: 520px;
+    height: 115px;
+    display: grid;
+    grid-template-columns: 130px 130px 130px 130px;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.travel-time-item {
+    position: relative;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.travel-time-item::after {
+    content: "/";
+    position: absolute;
+    color: white;
+    right: 0;
+    font-size: 18px;
+}
+
+.travel-time-item:last-child::after {
+    content: "";
+}
+
+.travel-times {
+    color: white;
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.travel-times p {
+    line-height: 35px;
+    padding-bottom: 6px;
+}
+
+.travel-times span {
+    font-size: 13px;
+}
+
+.travel-description-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.travel-description-item {
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.travel-description-item p {
+    margin: 20px 0;
+}
+
+.travel-description-item a {
+    color: #14b9d5;
+    text-decoration: none;
+}
+
+.travel-description-item>img {
+    height: 50px;
+}
+
+.travel-description-content {
+    letter-spacing: 1px;
+}
+
+.travel-description.grid-margin {}
