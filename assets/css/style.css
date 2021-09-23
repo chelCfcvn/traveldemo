@@ -290,10 +290,8 @@ html {
 }
 
 .our-proposals {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
 }
 
 .our-proposals-item {
@@ -608,4 +606,58 @@ html {
     letter-spacing: 1px;
 }
 
-.travel-description.grid-margin {}
+.travel-discover {}
+
+.travel-discover-list {
+    list-style: none;
+    width: 100%;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.travel-discover-list img {
+    width: 100%;
+    height: 268px;
+}
+
+.travel-discover-item {
+    position: relative;
+}
+
+.travel-discover-content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.travel-discover-content p {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 14px;
+    margin-bottom: 20px;
+}
+
+.travel-discover-content h3 {
+    font-size: 36px;
+    color: white;
+    line-height: 36px;
+    margin-bottom: 40px;
+}
+
+.travel-discover-content a {
+    font-size: 14px;
+    line-height: 14px;
+    text-decoration: none;
+    background-color: white;
+    padding: 15px 35px;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
